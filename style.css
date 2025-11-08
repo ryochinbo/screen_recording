@@ -1,0 +1,129 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f7f9;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+h1, h2 {
+    color: #1a253c;
+    border-bottom: 2px solid #eef2f5;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2em;
+}
+
+.controls fieldset {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.controls legend {
+    font-weight: bold;
+    color: #333;
+    padding: 0 10px;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.checkbox-group input {
+    margin-right: 10px;
+    width: 18px;
+    height: 18px;
+}
+
+.checkbox-group label {
+    font-size: 1.1em;
+}
+
+.buttons {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1.1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    margin: 0 10px;
+}
+
+button:hover:not(:disabled) {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+button:disabled {
+    background-color: #a0c7e4;
+    cursor: not-allowed;
+}
+
+#stop-btn {
+    background-color: #dc3545;
+}
+
+#stop-btn:hover:not(:disabled) {
+    background-color: #a71d2a;
+}
+
+.preview {
+    margin-bottom: 30px;
+}
+
+#preview-video {
+    width: 100%;
+    background-color: #000;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.recordings ul {
+    list-style: none;
+    padding: 0;
+}
+
+.recordings li {
+    background-color: #eef2f5;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.recordings a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.recordings a:hover {
+    text-decoration: underline;
+}

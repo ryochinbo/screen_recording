@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>画面・音声レコーダー</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>画面・音声レコーダー</h1>
+        <p>ブラウザだけで画面と音声を録画できます。</p>
+
+        <div class="controls">
+            <fieldset>
+                <legend>音声ソース</legend>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="system-audio" name="system-audio">
+                    <label for="system-audio">システム音声</label>
+                </div>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="mic-audio" name="mic-audio">
+                    <label for="mic-audio">マイク</label>
+                </div>
+            </fieldset>
+        </div>
+
+        <div class="buttons">
+            <button id="start-btn">録画開始</button>
+            <button id="stop-btn" disabled>録画停止</button>
+        </div>
+
+        <div class="preview">
+            <h2>プレビュー</h2>
+            <video id="preview-video" autoplay muted playsinline></video>
+        </div>
+
+        <div class="recordings">
+            <h2>録画ファイル</h2>
+            <ul id="recordings-list">
+                <li>まだ録画ファイルはありません。</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
